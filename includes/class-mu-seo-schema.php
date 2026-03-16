@@ -40,7 +40,7 @@ class MU_SEO_Schema {
 			$custom_schema = get_field( 'mu_page_schema', $post_id );
 
 			if ( $custom_schema ) {
-				echo wp_kses( $custom_schema, array( 'script' => array( 'type' => true ) ) ) . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				echo '<script type="application/ld+json">' . "\n" . $custom_schema . "\n" . '</script>' . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				return;
 			}
 		}
