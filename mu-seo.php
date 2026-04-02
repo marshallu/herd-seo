@@ -9,7 +9,7 @@
  * Plugin Name:  MU SEO
  * Plugin URI: https://www.marshall.edu
  * Description: This is a lean SEO plugin for Marshall University.
- * Version: 1.0.2
+ * Version: 1.3.3
  * Author: Christopher McComas
  */
 
