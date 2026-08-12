@@ -1,4 +1,4 @@
-# MU SEO — Work in Progress
+# Herd SEO — Work in Progress
 
 ## Completed
 
@@ -16,7 +16,7 @@
 ## In Progress
 
 ### Open Graph / Twitter Card Tags
-Adding social meta tag support to the MU SEO plugin.
+Adding social meta tag support to the Herd SEO plugin.
 
 **Files created / modified:**
 

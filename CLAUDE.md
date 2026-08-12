@@ -1,8 +1,8 @@
-# MU SEO
+# Herd SEO
 
 A lean, internal SEO plugin for Marshall University's WordPress network.
 
-- **Package**: `marshallu/mu-seo`
+- **Package**: `marshallu/herd-seo`
 - **Type**: WordPress MU (must-use) plugin
 - **Author**: Christopher McComas
 
@@ -44,7 +44,7 @@ This project uses [WordPress Coding Standards (WPCS)](https://github.com/WordPre
 ## Project Structure
 
 ```
-mu-seo/
+herd-seo/
 ├── mu-seo.php          # Plugin entry point (header, bootstrap)
 ├── composer.json       # Dev dependencies (PHPCS, WPCS, ACF stubs)
 ├── .gitignore
@@ -54,7 +54,7 @@ mu-seo/
 As the plugin grows, follow this structure:
 
 ```
-mu-seo/
+herd-seo/
 ├── mu-seo.php
 ├── includes/
 │   ├── class-mu-seo.php        # Core plugin class

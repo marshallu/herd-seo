@@ -1,15 +1,15 @@
 <?php
 /**
- * MU SEO
+ * Herd SEO
  *
  * This is a SEO for Marshall University's WordPress network.
  *
  * @package MU_SEO
  *
- * Plugin Name:  MU SEO
+ * Plugin Name:  Herd SEO
  * Plugin URI: https://www.marshall.edu
  * Description: This is a lean SEO plugin for Marshall University.
- * Version: 1.3.3
+ * Version: 1.3.4
  * Author: Christopher McComas
  */
 
@@ -26,6 +26,15 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/class-mu-seo.php';
  */
 function mu_seo() {
 	return MU_SEO::instance();
+}
+
+/**
+ * Returns the main instance of MU_SEO using the new plugin branding.
+ *
+ * @return MU_SEO
+ */
+function herd_seo() {
+	return mu_seo();
 }
 
 mu_seo();

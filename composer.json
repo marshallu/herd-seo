@@ -1,8 +1,8 @@
 {
-	"name": "marshallu/mu-seo",
+	"name": "marshallu/herd-seo",
 	"description": "A lean SEO plugin for Marshall University WordPress sites.",
 	"keywords": ["wordpress", "plugin", "seo"],
-	"homepage": "https://github.com/marshallu/mu-seo",
+	"homepage": "https://github.com/marshallu/herd-seo",
 	"license": "MIT",
 	"authors": [
 		{

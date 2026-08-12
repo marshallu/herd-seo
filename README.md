@@ -1,8 +1,8 @@
-# MU SEO
+# Herd SEO
 
 A lean SEO plugin for Marshall University's WordPress sites.
 
-- **Package:** `marshallu/mu-seo`
+- **Package:** `marshallu/herd-seo`
 - **Type:** WordPress plugin
 - **Requires:** ACF Pro
 
@@ -32,24 +32,24 @@ Upload the plugin directory to `wp-content/plugins/` and activate it from the Wo
 ```
 wp-content/
 └── plugins/
-    └── mu-seo/
+    └── herd-seo/
         ├── mu-seo.php
         └── includes/
             └── ...
 ```
 
-Then go to **Plugins** in the WordPress admin and activate **MU SEO**.
+Then go to **Plugins** in the WordPress admin and activate **Herd SEO**.
 
 ### Composer Installation
 
 ```bash
-composer require marshallu/mu-seo
+composer require marshallu/herd-seo
 ```
 
-Composer will install the plugin to `wp-content/plugins/mu-seo/`. Activate it from the WordPress admin or via WP-CLI:
+Composer will install the plugin to `wp-content/plugins/herd-seo/`. Activate it from the WordPress admin or via WP-CLI:
 
 ```bash
-wp plugin activate mu-seo
+wp plugin activate herd-seo
 ```
 
 Composer dependencies (PHPCS, WPCS, ACF stubs) are dev-only and not required in production.
@@ -117,7 +117,7 @@ The plugin parses the `acf/hero` block's saved `attrs.data` to find the image ID
 
 The following tags are output in `wp_head` on singular pages only. Nothing is output on archives, the home page, or 404s.
 
-WordPress core's `rel_canonical` hook is removed — the canonical link is managed entirely by MU SEO.
+WordPress core's `rel_canonical` hook is removed — the canonical link is managed entirely by Herd SEO.
 
 ### Meta Tags (`MU_SEO_Head`, priority 2)
 
@@ -247,7 +247,7 @@ add_filter( 'mu_seo_og_image_id', function( $image_id, $post_id ) {
 
 ### `mu_seo_og_type`
 
-Filters the default `og:type` for the current post. Runs only when the per-post ACF field is blank. Use this to assign the correct OG type to custom post types without editing MU SEO directly.
+Filters the default `og:type` for the current post. Runs only when the per-post ACF field is blank. Use this to assign the correct OG type to custom post types without editing Herd SEO directly.
 
 Valid OG types include `article`, `website`, and `profile`. See [ogp.me](https://ogp.me/#types) for the full list.
 
@@ -331,13 +331,13 @@ add_filter( 'mu_seo_schema', function( $schema, $post_id, $post_type ) {
 
 ## Yoast SEO Migration
 
-MU SEO includes a migration tool for moving Yoast SEO post meta and global options into MU SEO's ACF fields. Existing MU SEO values are never overwritten.
+Herd SEO includes a migration tool for moving Yoast SEO post meta and global options into Herd SEO's ACF fields. Existing Herd SEO values are never overwritten.
 
 ### What gets migrated
 
 **Per-post meta:**
 
-| Yoast meta key | MU SEO field |
+| Yoast meta key | Herd SEO field |
 |---|---|
 | `_yoast_wpseo_title` | `mu_seo_title` |
 | `_yoast_wpseo_metadesc` | `mu_seo_description` |
@@ -349,7 +349,7 @@ Values containing Yoast template variables (`%%title%%`, etc.) are skipped. If a
 
 **Global options** (from `wpseo_social`):
 
-| Yoast option | MU SEO field |
+| Yoast option | Herd SEO field |
 |---|---|
 | `twitter_site` | `mu_seo_twitter_handle` (options page) |
 | `og_default_image_id` | `mu_seo_default_og_image` (options page) |
@@ -431,7 +431,7 @@ All code follows [WordPress Coding Standards](https://github.com/WordPress/WordP
 ## File Structure
 
 ```
-mu-seo/
+herd-seo/
 ├── mu-seo.php                      # Plugin entry point
 ├── includes/
 │   ├── class-mu-seo.php            # Core singleton, bootstraps all classes

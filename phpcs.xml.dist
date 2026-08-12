@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="MU SEO">
-    <description>WordPress and VIP Coding Standards for MU SEO.</description>
+<ruleset name="Herd SEO">
+    <description>WordPress and VIP Coding Standards for Herd SEO.</description>
 
     <rule ref="WordPress"/>
     <rule ref="WordPress-VIP-Go"/>
@@ -22,7 +22,7 @@
     <rule ref="WordPress.WP.I18n">
         <properties>
             <property name="text_domain" type="array">
-                <element value="mu-seo"/>
+                <element value="herd-seo"/>
             </property>
         </properties>
     </rule>
@@ -31,6 +31,7 @@
         <properties>
             <property name="prefixes" type="array">
                 <element value="mu_seo"/>
+                <element value="herd_seo"/>
                 <element value="MU_SEO"/>
             </property>
         </properties>
